@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Property | DreamEstate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#10b981', 
+                        'secondary': '#059669',
+                        'background': '#f9fafb',
+                    }
+                }
+            }
+        }
+    </script>
+    </head>
+
+<body class="font-sans bg-background min-h-screen">
+
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-primary tracking-tight">
+                Dream<span class="text-gray-800">Estate</span>
+            </a>
+            <nav class="hidden md:flex space-x-6 text-gray-600 font-medium">
+                <a href="index.html" class="text-primary transition duration-150">Home</a>
+                <a href="buy.html" class="hover:text-primary transition duration-150">Buy</a>
+                <a href="#" class="text-primary transition duration-150">Rent</a>
+                <a href="sell.html" class="hover:text-primary transition duration-150">Sell</a>
+                <a href="about.html" class="hover:text-primary transition duration-150">About Us</a>
+            </nav>
+            <button class="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-2">Apartments, Houses & More for Rent</h1>
+        <p class="text-lg text-gray-500 mb-8">Find the perfect rental property to fit your lifestyle and budget.</p>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg mb-10 border border-gray-100">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                
+                <div>
+                    <label for="city-input-rent" class="block text-sm font-medium text-gray-700 mb-1">City or Area</label>
+                    <input type="text" id="city-input-rent" placeholder="e.g., Suburbia, Chennai" class="w-full border-gray-300 rounded-lg shadow-sm focus:border-primary focus:ring-primary p-2.5 transition duration-150">
+                </div>
+
+                <div>
+                    <label for="max-rent-filter" class="block text-sm font-medium text-gray-700 mb-1">Max Monthly Rent (INR)</label>
+                    <select id="max-rent-filter" class="w-full border-gray-300 rounded-lg shadow-sm focus:border-primary focus:ring-primary p-2.5 transition duration-150">
+                        <option value="15000">₹15,000</option>
+                        <option value="30000">₹30,000</option>
+                        <option value="50000">₹50,000</option>
+                        <option value="100000">₹1,00,000+</option>
+                    </select>
+                </div>
+
+                <div class="flex items-end">
+                    <button class="w-full bg-primary text-white font-semibold py-3 px-4 rounded-lg hover:bg-secondary transition duration-300 shadow-md hover:shadow-lg">
+                        Find Rentals 🔑
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Rent with DreamEstate?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="bg-white p-6 rounded-xl shadow-md border-b-4 border-primary">
+                <p class="text-4xl mb-3">✅</p>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Verified Listings</h3>
+                <p class="text-gray-600">All properties are inspected and verified for accuracy and condition.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border-b-4 border-primary">
+                <p class="text-4xl mb-3">⏱️</p>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Quick Process</h3>
+                <p class="text-gray-600">Easy application and background check for fast move-in.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border-b-4 border-primary">
+                <p class="text-4xl mb-3">🤝</p>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Dedicated Support</h3>
+                <p class="text-gray-600">24/7 support for maintenance and tenant queries.</p>
+            </div>
+        </div>
+
+    </main>
+    <footer class="mt-12 py-6 border-t border-gray-200 text-center text-gray-500 text-sm">
+        &copy; 2025 DreamEstate. All rights reserved.
+    </footer>
+</body>
+</html>
